@@ -9,7 +9,7 @@ Play Rock Paper Scissors Lizard Spock!
 
   -h, --help        display this help message and exit
   -r, --rules       display the rules and exit
-  
+
 Examples:
   node-rpsls        Return JSON with single player RPSLS result.
                     e.g. {"player":"rock"}
@@ -42,8 +42,8 @@ if (args.r || args.rules) {
 
 let shot = args._[0]
 
-try {
-    console.log(JSON.stringify(rpsls(shot)));
-} catch (e) {
-    console.log(rules);
-}
+// try {
+//     console.log(JSON.stringify(rpsls(shot)));
+// } catch (e) {
+//     console.log(rules);
+// }
