@@ -41,5 +41,16 @@ let shot = args._[0] // Take in shot
 try {
   console.log(JSON.stringify(rpsls(shot))); // Actually call the rpsls 
 } catch (e) {
-  console.log(rules); // If someone messes up, show them what they should have put in 
+  console.log(`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
+  - Scissors CUTS Paper
+  - Paper COVERS Rock
+  - Rock SMOOSHES Lizard
+  - Lizard POISONS Spock
+  - Spock SMASHES Scissors
+  - Scissors DECAPITATES Lizard
+  - Lizard EATS Paper
+  - Paper DISPROVES Spock
+  - Spock VAPORIZES Rock
+  - Rock CRUSHES Scissors
+  `); // If someone messes up, show them what they should have put in 
 }

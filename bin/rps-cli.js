@@ -36,6 +36,19 @@ let shot = args._[0] // Take in shot
 try {
 	console.log(JSON.stringify(rps(shot))); // Start game 
 } catch (e) {
-	console.log(help_message); // Show em how to play if they mess up
-	console.log(rules);
+	console.log(`Usage: node-rps [SHOT]
+  Play Rock Paper Scissors (RPS)
+  
+    -h, --help      display this help message and exit
+    -r, --rules     display the rules and exit
+  
+  Examples:
+    node-rps        Return JSON with single player RPS result.
+                    e.g. {"player":"rock"}
+    node-rps rock   Return JSON with results for RPS played against a simulated opponent.
+                    e.g {"player":"rock","opponent":"scissors","result":"win"}`); // Show em how to play if they mess up
+	console.log(`Rules for Rock Paper Scissors:
+  - Scissors CUTS Paper
+  - Paper COVERS Rock
+  - Rock CRUSHES Scissors`);
 }      
