@@ -40,7 +40,7 @@ if (args.r || args.rules) {
 	process.exit(0);
 }
 
-let shot = args._[0]
+// let shot = args._[0]
 
 // try {
 //     console.log(JSON.stringify(rpsls(shot)));
