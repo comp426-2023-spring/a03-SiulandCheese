@@ -36,7 +36,8 @@ let shot = args._[0]
 try {
     rps(shot); 
 } catch (e) {
-	console.log("ERROR CAUGHT")
+	console.log(help_message);
+	console.log(rules);
 }
 
 

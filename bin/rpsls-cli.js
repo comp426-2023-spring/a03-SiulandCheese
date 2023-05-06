@@ -43,5 +43,5 @@ if (args.r || args.rules) {
 try {
     rpsls(shot); 
 } catch (e) {
-	console.log("ERROR CAUGHT")
+	console.log(rules);
 }
