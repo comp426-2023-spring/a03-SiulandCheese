@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import minimist from "minimist";
 import { rpsls } from "./lib/rpsls.js"
 
@@ -28,4 +29,12 @@ if (args.h || args.help) {
 if (args.r || args.rules) {
 	console.log(rules);
 	process.exit(0);
+}
+
+let shot = args._[0]
+
+try {
+    console.log(JSON.stringify(rpsls(shot)));
+} catch (e) {
+    console.log(rules);
 }
